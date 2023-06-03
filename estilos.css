@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+body{
+   width:100% ;
+  background-image: url(img/fondo1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+ 
+}
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+   color: black;
+}
+ /*header superior*/
+
+ .header__superior{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+   justify-content: space-between;
+    padding: 20px;
+ }
+ 
+ .logo img{
+    width: 250px;
+ }
+ .search input{
+    width: 300px;
+    padding: 10px;
+
+ }
+
+ /*barra menu*/
+ .container__menu{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(15, 15, 15);
+    padding: 0px 20px;
+ }
+ .menu{
+    max-width: 1200px;
+    margin: auto;
+    height: 100%;
+ }
+ nav{
+    height:100%;
+ }
+ nav > ul{
+    height: 100%;
+    display: flex;
+ }
+ nav  ul  li{
+    height: 100%;
+    list-style: none;
+    position: relative;
+ }
+
+ nav > ul > li > a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 14px;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: white;
+    transition: all 300ms ease;
+    background: rgb(15, 15, 15)
+
+ }
+ nav > ul > li > a:hover{
+    transform: scale(1.1);
+    background: rgb(68, 77, 85);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0,0, 0.5);
+ }
+ nav ul li ul {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    background:rgb(243, 243, 243);
+    position: absolute;
+    top: 90px;
+    left: -5px;
+    padding: 14px 0px;
+    visibility: hidden;
+    opacity: 0;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0,0, 0.5);
+    z-index: 10;
+    transition: all 300ms ease;
+
+ }
+ nav ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    top: 70px;
+ }
+ nav ul li ul::before{
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid white;
+    position: absolute;
+    top: -12px;
+    left: 20px;
+ }
+ nav ul li ul li a{
+    display: block;
+    color:rgb(43, 42, 41);
+    padding: 6px;
+    padding-left: 14px;
+    margin-top: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: all 300ms ease;
+ }
+ nav ul li ul li a:hover{
+    background: rgb(68, 77, 85);
+    color: #fff;
+    transform: scale(1.1);
+    padding-left: 30px;
+    font-size: 14px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0,0, 0.5);
+ }
+ .redes-sociales{
+  
+   display: flex;
+   align-items: flex-end;
+   height:100vh;
+   justify-content: right;
+ }
+ .redes-sociales a{
+    color: bisque;
+   text-decoration: none;
+   text-align: right;
+   font-size: 20px;
+   width: 5%;
+   display: block;
+   padding: 10px ;
+   
+   
+ }
+ .redes-sociales a:hover{
+   color: #3c4a4b;
+
+ }
+ .body{
+   background-color: rgb(8, 8, 8);
+   background-size: cover;
+ }
+ 
+img{
+   width: 250px;
+   display: block;
+   padding:30px;
+   
+}
+
+.Reserva--turno{
+   list-style-type: none;
+   text-align: left;
+   margin: 50px;
+   margin-bottom:15px;
+}
+.enlace{
+   list-style-type: none;
+   color: rgb(187, 170, 144);
+   text-align: left;
+   padding: 50px;
+   
+  
+}
+.ParrafoReserva{
+   color: beige;
+   text-align: left;
+   font-family: Arial, Helvetica, sans-serif;
+   margin-left: 100px;
+   margin-right:200px;
+   margin-top:30px;
+} 
+.enlaceSeña{
+   color: rgb(187, 170, 144);
+   text-align:left;
+   padding: 50px;
+   
+}   
+.enlaceTurno{
+   color: rgb(187, 170, 144);
+   text-align:left;
+   padding: 50px;
+  
+
+}
+.ParrafoTurnos{
+   color: beige;
+   text-align: left;
+   font-family: Arial, Helvetica, sans-serif;
+   margin-left: 100px;
+   margin-right:200px;
+   margin-top:150px ;
+
+}
+
+p{
+ color: antiquewhite;  
+}
+h1{
+   color: beige;
+}
+.container-formulario{
+ width:600px;
+ padding: 30px; 
+margin: auto;
+margin: top 100px;
+background-color: #303031;
+border: radius 5px; 
+font-family: Arial, Helvetica, sans-serif;
+box-shadow: 7px 13px 37px #555454;
+
+}
+.container-formulario h3{
+   font: size 22px;
+   margin-bottom:20px;
+  text-align: center;
+ 
+}
+.controles{
+   width:100%;
+   background-color: #8b8888;
+   padding:10px;
+   border-radius:5px;
+   margin-bottom:16px;
+   font-family:Arial, Helvetica, sans-serif ;
+   font-size:18px;
+   border:1px solid #1e3536;
+}
+.boton{
+   width:100%;
+   background-color: #fff;
+   border:none ;
+   padding:12px;
+   color: black;
+   margin: 16px 0;
+   font-size:16px;
+}
